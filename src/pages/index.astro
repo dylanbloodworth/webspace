@@ -1,16 +1,92 @@
 ---
-
+import "../styles/global.css";
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>main page</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-indigo-300">
+		<nav
+			class="font-bold pl-8 font-[JetBrainsMono_Nerd_Font] bg-gray-400"
+		>
+			dylansWebSpace v0.0.1 <a class="pl-8 px-6" href="/"
+				>Home</a
+			><a class="px-6" href="/blog/">Blog</a><a
+				class="px-6"
+				href="/about">About</a
+			>
+		</nav>
+		<div class="grid grid-cols-[20%_auto_15%]">
+			<div class="p-2 font-serif">grid1</div>
+			<div class="p-4">
+				<h1 class="bg-violet-500 p-3 pl-8">
+					This is my personal webpage
+				</h1>
+				<h2 class="bg-violet-300 pl-10">
+					What the point of this page?
+				</h2>
+				<div>
+					<p>
+						I want this page to be my place.
+						A place for creation,
+						experimentation, showcase, and
+						evolution.
+					</p>
+				</div>
+
+				<h2 class="bg-violet-300 pl-10">
+					Why did I decide to do this?
+				</h2>
+				<div>
+					<p>
+						I began writing some pieces on a
+						substack and became pretty
+						interested in their tool for
+						creating their substacks. The
+						tool felt pretty limiting, but I
+						tried to have fun with it and
+						add some really personal
+						elements where I could.
+					</p>
+					<p>
+						Some time later, I stumbled upon
+						the idea of <a
+							href="https://maggieappleton.com/garden-history"
+							>digital gardens</a
+						>. It seemed like a natural
+						extension of the rigid substack
+						customization. I know enough
+						about programming to create this
+						intorductory webpage. So, that's
+						what I'm doing. And in the
+						spirit of these "gardens",
+						there's no form. No structure.
+						No plan for how things should
+						look in the end. The only
+						purpose for this webpage is to
+						put a place to stretch my legs
+						and create a hub for things to
+						live as they naturally arise.
+					</p>
+				</div>
+			</div>
+			<div
+				class="grid grid-flow-row auto-rows-auto p-3 font-[JetBrainsMono_Nerd_Font] text-base text-yellow-300"
+			>
+				<h1>To-DO List</h1>
+				<p>[ ] Implement pages for blogs & articles</p>
+				<p>
+					[ ] Brainstorm ways for putting my notes
+					on the page
+				</p>
+				<p>
+					[ ] implement a better todo list system
+					haha! (maybe interactive javascript or a
+					simpler markdown files insert)
+				</p>
+				<p>[ ] reading lists?</p>
+			</div>
+		</div>
 	</body>
 </html>
