@@ -6,9 +6,9 @@ import "../styles/global.css";
 	<head>
 		<title>main page</title>
 	</head>
-	<body class="bg-indigo-300">
+	<body class="bg-[var(--yellow)]">
 		<nav
-			class="font-bold pl-8 font-[JetBrainsMono_Nerd_Font] bg-gray-400"
+			class="font-bold pl-8 font-[JetBrainsMono_Nerd_Font] bg-[var(--orange)]"
 		>
 			dylansWebSpace v0.0.1 <a class="pl-8 px-6" href="/"
 				>Home</a
@@ -17,9 +17,11 @@ import "../styles/global.css";
 				href="/about">About</a
 			>
 		</nav>
-		<div class="grid grid-cols-[20%_auto_15%]">
-			<div class="p-2 font-serif">grid1</div>
-			<div class="p-4">
+		<div class="pt-2 grid grid-cols-[20%_auto_15%]">
+			<div class="p-2 font-serif"></div>
+			<div
+				class="m-6 p-4 rounded-2xl border-3 border-r-8 border-b-8 bg-white"
+			>
 				<h1 class="bg-violet-500 p-3 pl-8">
 					This is my personal webpage
 				</h1>
@@ -72,7 +74,7 @@ import "../styles/global.css";
 				</div>
 			</div>
 			<div
-				class="grid grid-flow-row auto-rows-auto p-3 font-[JetBrainsMono_Nerd_Font] text-base text-yellow-300"
+				class="grid grid-flow-row auto-rows-auto p-3 font-[JetBrainsMono_Nerd_Font] text-base text-[var(--blue)]"
 			>
 				<h1>To-DO List</h1>
 				<p>[ ] Implement pages for blogs & articles</p>

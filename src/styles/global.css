@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-body {
-	font-family: "FreeSans";
-	font-weight: 400;
-}
-
 h1 {
 	font-weight: 600;
 	margin-bottom: 0.5em;
@@ -17,4 +12,12 @@ h2 {
 
 p {
 	margin-block: 0.75em;
+}
+
+:root {
+	--orange: #FB6107;
+	--customblue: #485696;
+	--cream: #EFCDBD;
+	--green: #5C8001;
+	--yellow: #FBB02D;
 }
