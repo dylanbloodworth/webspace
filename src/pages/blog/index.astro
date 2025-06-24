@@ -1,23 +1,27 @@
 ---
 import "../../styles/global.css";
+import Navbar from "../../layouts/navbar.astro";
 ---
 
 <html>
 	<head>
 		<title>Blog</title>
 	</head>
-	<body class="p-4">
+	<body>
+		<Navbar />
 		<h1>A temp place to post my thoughts</h1>
 		<p>Trying to figure out how to route posts onto this page.</p>
 		<div>
 			<ul>
 				<li>
 					<a href="/blog/posts/intuitions"
-						>Post 1</a>
+						>Post 1</a
+					>
 				</li>
 				<li>
 					<a href="/blog/posts/imtwentyfive"
-						>Post 2</a>
+						>Post 2</a
+					>
 				</li>
 			</ul>
 		</div>
