@@ -1,29 +1,29 @@
 ---
 import "../../styles/global.css";
 import Navbar from "../../layouts/navbar.astro";
+
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const blogPosts: CollectionEntry<"blog">[] = await getCollection("blog");
 ---
 
 <html>
-	<head>
-		<title>Blog</title>
-	</head>
-	<body>
-		<Navbar />
-		<h1>A temp place to post my thoughts</h1>
-		<p>Trying to figure out how to route posts onto this page.</p>
-		<div>
-			<ul>
-				<li>
-					<a href="/blog/posts/intuitions"
-						>Post 1</a
-					>
-				</li>
-				<li>
-					<a href="/blog/posts/imtwentyfive"
-						>Post 2</a
-					>
-				</li>
-			</ul>
-		</div>
-	</body>
+  <head><title>Blog</title> </head>
+  <body>
+    <Navbar />
+    <main class="p-10">
+      <h1>A place to write about my thoughts</h1>
+      <ul>
+        {
+          blogPosts.map((blog) => (
+            <div class="p-8">
+              <a href={"/blog/" + blog.slug}>{blog.data.title}</a>
+              <div>{blog.data.desc}</div>
+            </div>
+          ))
+        }
+      </ul>
+    </main>
+  </body>
 </html>

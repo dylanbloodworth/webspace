@@ -1,6 +1,8 @@
-# intuitive confusions with intuition
-
-_when does our learning become intuitive?_
+---
+title: intuitive confusions with intuition
+desc: when does our learning become intuitive
+slug: intuitive-confusions-with-intuition
+---
 
 ---
 

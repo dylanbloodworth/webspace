@@ -1,8 +1,8 @@
-# i'm twenty-five
-
-_what do I do?_
-
-2025-06-23 00:27
+---
+title: i'm twenty-five
+desc: what do I do?
+slug: im-twenty-five
+---
 
 ---
 

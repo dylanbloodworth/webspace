@@ -1,0 +1,27 @@
+---
+import Blog from "../../layouts/blog.astro";
+import "../../styles/global.css";
+
+import { render } from "astro:content";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const blogPosts: CollectionEntry<"blog">[] = await getCollection("blog");
+  return blogPosts.map((entry) => ({
+    params: {
+      slug: entry.slug,
+    },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Blog title={"Blog: " + entry.data.title}>
+  <h1 class="pt-10 text-4xl">{entry.data.title}</h1>
+  <div class="italic text-xl pb-8">{entry.data.desc}</div>
+  <Content />
+</Blog>
