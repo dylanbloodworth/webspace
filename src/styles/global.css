@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background-color: #e6e9ef;
+}
+
 h1 {
   font-weight: 800;
   margin-bottom: 0.5em;
