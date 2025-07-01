@@ -1,6 +1,6 @@
 ---
 import "../../styles/global.css";
-import Navbar from "../../layouts/navbar.astro";
+import Main from "../../layouts/main.astro";
 
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -8,22 +8,50 @@ import type { CollectionEntry } from "astro:content";
 const blogPosts: CollectionEntry<"blog">[] = await getCollection("blog");
 ---
 
-<html>
-  <head><title>Blog</title> </head>
-  <body>
-    <Navbar />
-    <main class="p-10">
-      <h1>A place to write about my thoughts</h1>
-      <ul>
-        {
-          blogPosts.map((blog) => (
-            <div class="p-8">
-              <a href={"/blog/" + blog.slug}>{blog.data.title}</a>
-              <div>{blog.data.desc}</div>
-            </div>
-          ))
-        }
-      </ul>
-    </main>
-  </body>
-</html>
+<Main title="blog">
+  <section class="p-10">
+    <h1 class="text-5xl">A place to write about my thoughts</h1>
+    <article>
+      <p>
+        This whole website endeavour started because I wanted to write blog
+        posts and put them somewhere other than Substack. I'm still trying to
+        find what I might consider the best methods for my personal writing. At
+        the start of 2025, physical writing -- like with a pen and some paper --
+        caught my attention. It seemed raw, natural. I was fighting against
+        unnecessary uses of technology in an attempt to make myself feel better;
+        a fight that I continue to struggle with. On the other hand, typing
+        blogs and personal essays was another medium that I began to explore
+        around the same time. They felt like they needed less time and thought.
+        Typing was free while I worried that paper would cost money. An online
+        ecosystem for writing seemed to align naturally with my note-taking
+        system at the time and could be easily posted for others to never read.
+      </p>
+
+      <p>
+        These blog posts are meant to capture the breadth of thoughts that I had
+        some reason or another for wanting to share. There's an urge to want to
+        write and have people read, so when I stumble upon thoughts wanting to
+        be shared, I'll write a little about it.
+      </p>
+
+      <h2 class="text-3xl pt-15">Most Recent Posts</h2>
+      <div class="flex">
+        <ul>
+          {
+            blogPosts.map((blog) => (
+              <div class="py-4">
+                <a
+                  class="underline text-[#1e66f5] text-2xl"
+                  href={"/blog/" + blog.slug}
+                >
+                  {blog.data.title}
+                </a>
+                <div class="italic">{blog.data.desc}</div>
+              </div>
+            ))
+          }
+        </ul>
+      </div>
+    </article>
+  </section>
+</Main>
