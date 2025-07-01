@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>main page</title>
+  </head>
+  <style>
+    .active-page,
+    .active-page:hover {
+      background-color: #a5d6a7;
+    }
+
+    a:hover {
+      background-color: #a5d6a74d;
+    }
+  </style>
+  <body>
+    <main class="pt-2 flex">
+      <nav class="flex flex-col w-48">
+        <div class="p-4 flex flex-col min-h-screen">
+          <div class="mb-5">dylansWebSpace v0.0.2</div>
+          <a class="p-1" href="/">home</a>
+          <a class="p-1" href="/about">about</a>
+          <a class="p-1" href="/blog/">blog</a>
+          <a class="p-1" href="/reading">reading</a>
+          <a class="p-1" href="https://github.com/dylanbloodworth">github</a>
+        </div>
+      </nav>
+      <slot />
+      <script is:inline>
+        const navLinks = document.querySelectorAll("nav a");
+        const curPath = window.location.pathname;
+
+        navLinks.forEach((link) => {
+          if (link.getAttribute("href") == curPath) {
+            link.classList.add("active-page");
+          }
+        });
+      </script>
+    </main>
+  </body>
+</html>

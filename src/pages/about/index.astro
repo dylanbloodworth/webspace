@@ -1,310 +1,81 @@
 ---
 import "../../styles/global.css";
-import Navbar from "../../layouts/navbar.astro";
+import Main from "../../layouts/main.astro";
 ---
 
-<html lang="en">
-	<head>
-		<style>
-			@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-			@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
-		</style><style>
-			@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-		</style></head
-	>
-	<body class="bg-[var(--orange)]">
-		<Navbar />
-		<main class="grid grid-rows-[2fr_1.5fr] h-dvh mx-30">
-			<section>
-				<div
-					class="m-8 my-10 px-20 pb-5
-					font-[Libre_Baskerville] text-6xl
-					flex justify-center border-b-2"
-				>
-					<p>
-						SO YOU WANT TO LEARN MORE <span
-							class="font-[Montserrat]"
-							>ABOUT</span
-						> ME?
-					</p>
-				</div>
-				<div class="grid grid-cols-[2fr_1fr] mt-10">
-					<section class="font-[Montserrat]">
-						<span class="text-3xl"
-							>I'm Dylan, a graduate
-							student in <em
-								><a
-									class="hover:underline"
-									href="https://liberalarts.vt.edu/departments-and-schools/school-of-education/academic-programs/science-education-program/about-science-ed-maed.html"
-									>Virginia
-									Tech's
-									Science
-									Initial
-									Teacher
-									Preparation
-									M.A.Ed</a
-								></em
-							></span
-						>
-						<div
-							class="grid grid-cols-2 space-x-4"
-						>
-							<p>
-								The above
-								sentence kind of
-								captures how I
-								may currently
-								identify at this
-								moment, but it's
-								silly to say
-								those 13 words
-								do a good job at
-								encapsulating
-								WHO I AM. In
-								fact, the
-								thought of
-								writing an about
-								page feels
-								simultaneuosly
-								silly and
-								stressful for
-								this simple
-								reason: <strong
-									>I don't
-									know
-									what's
-									important
-									to write
-									about.</strong
-								> "What lens should
-								be used when describing
-								myself?", is the
-								root of my problem.
-								If this were simply
-								an about page for
-								career opportunity,
-								then the goal of
-								the about page would
-								be pretty simple.
-								Instead, I find myself
-								trying to create
-								an about page that
-								captures more than
-								my career mindset
-								and highlights.
-							</p>
-							<p>
-								It's important
-								to acknowledge
-								that I'm a 25
-								year old guy
-								with parents and
-								siblings that he
-								loves. Maybe
-								it's important
-								to acknowledge
-								that I don't
-								have a dog, but
-								I really want a
-								pitbull once I
-								get a stable
-								job. I'm
-								typically pretty
-								shy when it
-								comes to social
-								situations. I'm
-								a fairly strong
-								introvert that
-								enjoys both
-								esoteric
-								discussion and
-								turning my brain
-								off while
-								watching youtube
-								or livestreams.
-								I AM a graduate
-								student, but I'm
-								more. However,
-								that more
-								doesn't seem
-								relevant enough
-								to talk about on
-								an about page
-								that claims to
-								highlight me.
-								<em
-									>Could
-									someone
-									every
-									truly
-									describe
-									themselves
-									with
-									words
-									alone?</em
-								>
-							</p>
-						</div>
-					</section>
-					<section>
-						<div
-							class="flex center justify-center size-full"
-						>
-							<img
-								src="../../../public/imgs/trace-dylan-standing.svg"
-								alt="Trace of Dylan standing"
-							/>
-						</div>
-					</section>
-				</div>
-				<section class="my-10 border-2">
-					<div class="grid grid-cols-[1fr_2fr]">
-						<div></div>
-						<div>
-							<h1
-								class="bg-black text-[var(--orange)]
-								text-6xl font-[Caladea]
-								flex justify-center
-								py-5"
-							>
-								Academic
-								background
-							</h1>
-							<div class="m-6 ml-10">
-								<div
-									class="grid grid-cols-3 space-x-4"
-								>
-									<p>
-										As
-										of
-										writing
-										this,
-										I've
-										spent
-										roughly
-										20
-										years
-										(~80%
-										of
-										life
-										so
-										far)
-										in
-										various
-										schooling
-										systems.
-										I
-										started
-										private
-										school
-										in
-										Puerto
-										Rico,
-										moved
-										to
-										Virginia
-										and
-										transitioned
-										into
-										the
-										public
-										schooling
-										system,
-										completed
-										undergraduate
-										university,
-										and
-										then
-										spent
-										way
-										too
-										much
-										time
-										trying
-										to
-										figure
-										out
-										my
-										path
-										in
-										higher
-										education
-										with
-										graduate
-										schooling.
-									</p>
-									<p>
-										I've
-										listed
-										every
-										school
-										I've
-										ever
-										attended
-										(even
-										the
-										ones
-										I
-										didn't
-										complete)
-										in
-										reverse
-										chronological
-										order
-										with
-										the
-										intention
-										of
-										adding
-										to
-										it
-										as
-										the
-										years
-										go
-										on.
-									</p>
-									<div>
-										<p
-										>
-											Washington
-											State
-											University
-										</p>
-										<p
-										>
-											Virginia
-											Tech
-										</p>
-										<p
-										>
-											Battlefield
-											High
-											School
-										</p>
-										<p
-										>
-											Bull
-											Run
-											Middle
-											School
-										</p>
-										<p
-										>
-											The
-											Baldwin
-											School
-											of
-											Puerto
-											Rico
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</section>
-		</main>
-	</body>
-</html>
+<Main>
+  <section class="main p-10">
+    <h1 class="text-5xl">
+      SO YOU WANT TO LEARN MORE <span class="font-[Montserrat]">ABOUT</span> ME?
+    </h1>
+    <article class="flex py-10">
+      <div class="w-2/3 flex flex-col">
+        <span class="text-3xl"
+          >I'm Dylan, a graduate student in <em
+            ><a
+              class="hover:underline"
+              href="https://liberalarts.vt.edu/departments-and-schools/school-of-education/academic-programs/science-education-program/about-science-ed-maed.html"
+              >Virginia Tech's Science Initial Teacher Preparation M.A.Ed</a
+            ></em
+          ></span
+        >
+        <p>
+          The above sentence kind of captures how I may currently identify at
+          this moment, but it's silly to say those 13 words do a good job at
+          encapsulating WHO I AM. In fact, the thought of writing an about page
+          feels simultaneuosly silly and stressful for this simple reason: <strong
+            >I don't know what's important to write about.</strong
+          > "What lens should be used when describing myself?", is the root of my
+          problem. If this were simply an about page for career opportunity, then
+          the goal of the about page would be pretty simple. Instead, I find myself
+          trying to create an about page that captures more than my career mindset
+          and highlights.
+        </p>
+        <p>
+          It's important to acknowledge that I'm a 25 year old guy with parents
+          and siblings that he loves. Maybe it's important to acknowledge that I
+          don't have a dog, but I really want a pitbull once I get a stable job.
+          I'm typically pretty shy when it comes to social situations. I'm a
+          fairly strong introvert that enjoys both esoteric discussion and
+          turning my brain off while watching youtube or livestreams. I AM a
+          graduate student, but I'm more. However, that more doesn't seem
+          relevant enough to talk about on an about page that claims to
+          highlight me.
+          <em
+            >Could someone every truly describe themselves with words alone?</em
+          >
+        </p>
+      </div>
+      <div class="w-1/3 flex center justify-center">
+        <img
+          src="imgs/trace-dylan-standing.svg"
+          alt="Trace of Dylan standing"
+        />
+      </div>
+    </article>
+
+    <div>
+      <h1>Academic background</h1>
+      <p>
+        As of writing this, I've spent roughly 20 years (~80% of life so far) in
+        various schooling systems. I started private school in Puerto Rico,
+        moved to Virginia and transitioned into the public schooling system,
+        completed undergraduate university, and then spent way too much time
+        trying to figure out my path in higher education with graduate
+        schooling.
+      </p>
+      <p>
+        I've listed every school I've ever attended (even the ones I didn't
+        complete) in reverse chronological order with the intention of adding to
+        it as the years go on.
+      </p>
+      <div>
+        <p>Washington State University</p>
+        <p>Virginia Tech</p>
+        <p>Battlefield High School</p>
+        <p>Bull Run Middle School</p>
+        <p>The Baldwin School of Puerto Rico</p>
+      </div>
+    </div>
+  </section>
+</Main>
