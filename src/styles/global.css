@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 body {
-  background-color: #e6e9ef;
+  background-color: var(--base);
+  color: var(--text);
 }
 
 h1 {
@@ -18,10 +19,26 @@ p {
   margin-block: 0.75em;
 }
 
+/* https://catppuccin.com/palette/ */
+/* https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md */
 :root {
-  --orange: #fb6107;
-  --customblue: #485696;
-  --cream: #efcdbd;
-  --green: #5c8001;
-  --yellow: #fbb02d;
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: 114, 135, 253;
+  --text: #4c4f69;
+  --subtext: #5c5f77;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
 }

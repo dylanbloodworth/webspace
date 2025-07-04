@@ -9,11 +9,11 @@ const { title } = Astro.props;
     <style>
       .active-page,
       .active-page:hover {
-        background-color: #a5d6a7;
+        background-color: rgba(var(--lavender), 0.5);
       }
 
       a:hover {
-        background-color: #a5d6a74d;
+        background-color: rgba(var(--lavender), 0.1);
       }
     </style></head
   >
@@ -21,14 +21,17 @@ const { title } = Astro.props;
   <body>
     <main class="pt-2 flex">
       <nav class="flex flex-col">
-        <div class="p-4 flex flex-col min-h-screen">
+        <ul class="p-4 flex flex-col">
           <div class="mb-5">dylansWebSpace v0.0.2</div>
-          <a class="p-1" href="/">home</a>
-          <a class="p-1" href="/about">about</a>
-          <a class="p-1" href="/blog/">blog</a>
-          <a class="p-1" href="/reading">reading</a>
-          <a class="p-1" href="https://github.com/dylanbloodworth">github</a>
-        </div>
+          <li><a class="p-1" href="/">home</a></li>
+          <li><a class="p-1" href="/about">about</a></li>
+          <li><a class="p-1" href="/blog/">blog</a></li>
+          <li><a class="p-1" href="/reading">reading</a></li>
+          <li><a class="p-1" href="/projects">projects</a></li>
+          <li>
+            <a class="p-1" href="https://github.com/dylanbloodworth">github</a>
+          </li>
+        </ul>
       </nav>
       <slot />
       <script is:inline>

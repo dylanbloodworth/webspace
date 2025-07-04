@@ -20,7 +20,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<Blog title={"Blog: " + entry.data.title}>
+<Blog title={"blog: " + entry.data.title}>
   <h1 class="pt-10 text-4xl">{entry.data.title}</h1>
   <div class="italic text-xl pb-8">{entry.data.desc}</div>
   <div>
