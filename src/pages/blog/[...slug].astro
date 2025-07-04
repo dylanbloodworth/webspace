@@ -20,10 +20,19 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<Blog title={"blog: " + entry.data.title}>
-  <h1 class="pt-10 text-4xl">{entry.data.title}</h1>
-  <div class="italic text-xl pb-8">{entry.data.desc}</div>
-  <div>
-    <Content />
-  </div>
-</Blog>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>{"blog: " + entry.data.title}</title>
+  <body>
+    <main class="px-30">
+      <nav class="pt-5">
+        <a class="underline text-[var(--blue)]" href="/blog/">back to blog</a>
+      </nav>
+      <h1 class="pt-10 text-4xl">{entry.data.title}</h1>
+      <div class="prose italic text-xl pb-8">{entry.data.desc}</div>
+      <div>
+        <Content />
+      </div>
+    </main>
+  </body>
+</html>
