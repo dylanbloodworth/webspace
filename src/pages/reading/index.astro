@@ -1,0 +1,13 @@
+---
+import "../../styles/global.css";
+import Main from "../../layouts/main.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const books: CollectionEntry<"bookReviews">[] =
+  await getCollection("bookReviews");
+
+books.forEach((book) => console.log(book));
+---
+
+<Main title="reading" />
