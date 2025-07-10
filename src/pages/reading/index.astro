@@ -6,8 +6,36 @@ import type { CollectionEntry } from "astro:content";
 
 const books: CollectionEntry<"bookReviews">[] =
   await getCollection("bookReviews");
-
-books.forEach((book) => console.log(book));
 ---
 
-<Main title="reading" />
+<Main title="reading">
+  <section class="flex flex-col p-10">
+    <h1 class="text-5xl">I'm trying to start reading again</h1>
+    <p>
+      Here's a collection of books that I've finished reading and my thoughts
+      about them.
+    </p>
+    <ul>
+      {
+        books.map((book) => (
+          <li>
+            {book.data.title} by <em>{book.data.author}</em>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="py-20">
+      <h2 class="text-3xl">Websites are also important</h2>
+      <p>
+        The more I partake in collecting resources that I find interesting, the
+        more I realize how much I forget about aspects of usefulness these
+        resources provide. I've come to the realization that I need to collect
+        in order to remember. So, <a
+          class="underline text-[var(--blue)]"
+          href="/reading/useful_links"
+          >here's my collection of webpage links for future reference.
+        </a>
+      </p>
+    </div>
+  </section>
+</Main>
