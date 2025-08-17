@@ -2,12 +2,31 @@
   {
     "id": "001",
     "title": "Intermezzo",
-    "author": "Sally Rooney"
+    "author": "Sally Rooney",
+    "stars": 4.25,
+    "review": "N/A"
   },
   {
     "id": "002",
     "title": "Slaughterhouse 5",
-    "author": "Kurt Vonnegut"
+    "author": "Kurt Vonnegut",
+    "stars": 3,
+    "review": "N/A"
+  },
+  {
+    "id": "003",
+    "title": "The Gods Themselves",
+    "author": "Isaac Asimov",
+    "stars": 3.25,
+    "review": "The book introduces a complicated, real problem that people need to tackle, puts an equally good filler episode in the middle that doesn\u2019t further the original plot, then resolves the complicated issues with a cop out solution that never challenges the original concern with humanity\u2019s rampant narcissism.\nIn \u201cAgainst Stupidity\u201d, the central conflict that we as people are too narcissistic to change our politics and society for the sake of our salvation rings true to our current landscape. Humans would rather have infinite energy at the expense of the Sun exploding instead of working together to find an alternative at the cost of a fraction of their security. The parallels with environmental efforts and billionaire wealth and greed are palpable. Furthermore, although Lamont works towards \u201cobjective good\u201d, presenting him as whiny and spiteful further points to the complex issues with humans and our motivations. \u201cThe Gods Themselves\u201d only loses me in that it doesn't further or alter the original conflict in any way. That may be because I\u2019m human-centric, and it's hard to have as much empathy for a world that wasn't in any danger. However, that's not to knock the story itself. I thought the triad dynamic was layered, and Dua is a likable outcast just trying to make sense of the world. It's a great story; the Soft/Hard Ones reveal was telegraphed, but not as I had expected, which was fun. Still, this section felt unnecessary in this particular story, except for giving us insight into how lucky Bronowski was to communicate with a sympathetic Soft One. It might have worked better as its own story. \u201cContend in Vain?\u201d was a mix of the first two sections. The Moon world-building was enjoyable, but again, it distracted from the original central conflict. Selene never felt fully developed like Dua, and her intuitionism reduced her to a tool for the men in the story to further their scientific discoveries. Ben feels a little creepy with all the naked talk around Selene, and nothing stands out as him being the guy who had to go to the moon to work on the Pionizer. Introducing another political layer with Moon\u2019s independence gave great motivation to Neville, but having him just go mad scientist, trying to move the moon at the end felt silly. The discovery of the cosmeg felt simple, and skirts tackled Lamont\u2019s problem of humanity\u2019s unwillingness to put themselves before profit and security. An exact opposite universe with no life that reverses the effect of the electron pump is lackluster. The universe now has two infinite energy sources instead of trying to tackle the political and ethical questions of running a parasitic source of endless energy. I picked this book up randomly at a used book store and overall was pretty happy with the story, characters, and B plots. I think my personal flaw was that I was so invested in the plot of humans and their greed that I was upset how little care was put into it after the first section. "
+  },
+  {
+    "id": "004",
+    "title": "We'll Prescribe You a Cat",
+    "author": "Syou Ishida",
+    "stars": 3.25,
+    "review": "I took a while a long break while reading this book, so I’m not fresh on the first few stories. But overall, I thought the book was uplifting, especially at a chaotic time in my life. Just a fun, thoughtful, and easy-going read that helped get me back into reading. The last twist with Chitose and Dr Nikke was pretty confusing, so I should probably take some time to read about it more."
+
   }
 
 ]

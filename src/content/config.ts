@@ -15,6 +15,8 @@ const bookReviewsCollection = defineCollection({
 		id: z.string(),
 		title: z.string(),
 		author: z.string(),
+		stars: z.number(),
+		review: z.string(),
 	}),
 })
 

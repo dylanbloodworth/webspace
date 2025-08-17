@@ -15,27 +15,35 @@ const books: CollectionEntry<"bookReviews">[] =
       Here's a collection of books that I've finished reading and my thoughts
       about them.
     </p>
-    <ul>
-      {
-        books.map((book) => (
-          <li>
-            {book.data.title} by <em>{book.data.author}</em>
-          </li>
-        ))
-      }
-    </ul>
-    <div class="py-20">
+    <section class="flex justify-center">
+      <ul
+        class="w-4/5 space-y-10 h-[55svh] overflow-y-auto bg-white p-5 border"
+      >
+        {
+          books.map((book) => (
+            <li>
+              <div class="text-lg">
+                {book.data.title} by <em>{book.data.author}</em>
+              </div>
+              <div class="pl-4">{book.data.stars}★</div>
+              <hr />
+              <div class="pt-2 px-8 text-justify">{book.data.review}</div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section class="pt-5">
       <h2 class="text-3xl">Websites are also important</h2>
       <p>
-        The more I partake in collecting resources that I find interesting, the
-        more I realize how much I forget about aspects of usefulness these
-        resources provide. I've come to the realization that I need to collect
-        in order to remember. So, <a
+        Making an effort to collect items that peak my interest reminds me of
+        how often inspiring works are forgotten. Logging and storing these items
+        is a nonnegotiable if I'm striving to be creative and inspired. So, <a
           class="underline text-[var(--blue)]"
           href="/reading/useful_links"
           >here's my collection of webpage links for future reference.
         </a>
       </p>
-    </div>
+    </section>
   </section>
 </Main>
