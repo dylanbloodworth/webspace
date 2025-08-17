@@ -4,8 +4,6 @@ desc: what do I do?
 slug: im-twenty-five
 ---
 
----
-
 i had a thought today about turning twenty-six and being kicked off dad's insurance. that thought coinciding with the fact that i may not be working when I do turn twenty-six--and therefore no health insurance of my own--started to worry me. from there, obviously, thoughts began to spiral in their nature way.
 
 _can i get health insurance while at school?_ i might need to get a part-time job with benefits. or maybe i need to enroll in medicaid if i decide to not get a job. or maybe i hope i stay healthy for the year that im in school again.
