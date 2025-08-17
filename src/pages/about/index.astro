@@ -5,12 +5,12 @@ import Main from "../../layouts/main.astro";
 ---
 
 <Main title="about">
-  <section class="main p-10">
+  <section class="main p-5 md:p-10">
     <h1 class="text-5xl">
       SO YOU WANT TO LEARN MORE <span class="font-[Montserrat]">ABOUT</span> ME?
     </h1>
-    <article class="flex py-10">
-      <div class="w-2/3 flex flex-col">
+    <article class="flex flex-col md:flex-row py-10">
+      <div class="md:w-2/3 flex flex-col">
         <span class="text-3xl"
           >I'm Dylan, a graduate student in <em
             ><a
@@ -47,7 +47,7 @@ import Main from "../../layouts/main.astro";
           >
         </p>
       </div>
-      <div class="w-1/3 flex center justify-center">
+      <div class="md:w-1/3 flex center justify-center">
         <img
           src="/imgs/trace-dylan-standing.svg"
           alt="Trace of Dylan standing"
