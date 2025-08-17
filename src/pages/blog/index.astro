@@ -1,5 +1,6 @@
 ---
-import "../../styles/global.css";
+import "../../styles/style.css";
+import "../../styles/mobile.css";
 import Main from "../../layouts/main.astro";
 
 import { getCollection } from "astro:content";
@@ -9,7 +10,7 @@ const blogPosts: CollectionEntry<"blog">[] = await getCollection("blog");
 ---
 
 <Main title="blog">
-  <section class="p-10">
+  <section class="p-5 md:p-10">
     <h1 class="text-5xl">A place to write about my thoughts</h1>
     <article>
       <p>

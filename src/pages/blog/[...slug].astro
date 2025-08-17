@@ -1,5 +1,6 @@
 ---
-import "../../styles/global.css";
+import "../../styles/style.css";
+import "../../styles/mobile.css";
 
 import { render } from "astro:content";
 import { getCollection } from "astro:content";
@@ -21,6 +22,7 @@ const { Content } = await render(entry);
 
 <html lang="en">
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style is:global>
     @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
@@ -39,18 +41,18 @@ const { Content } = await render(entry);
   </style>
   <title>{"blog: " + entry.data.title}</title>
   <body class="flex justify-center">
-    <main class="pb-10 w-3/5">
+    <main class="pb-10 w-95/100 md:w-3/5">
       <nav class="py-5">
         <a class="underline text-[var(--blue)]" href="/blog/">go back!</a>
       </nav>
-      <section class="p-10 bg-white border shadow-xl/15">
+      <section class="p-4 md:p-10 bg-white border shadow-xl/15">
         <header class="py-2 text-5xl text-center">
           {entry.data.title}
         </header>
         <div class="text-xl pb-8 text-center">
           {entry.data.desc}
         </div>
-        <div class="text-xl leading-[1.75]">
+        <div class="text-xl md:leading-[1.75] text-justify md:text-left">
           <hr />
           <Content />
         </div>

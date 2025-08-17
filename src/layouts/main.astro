@@ -5,6 +5,7 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <style>
       .active-page,
@@ -12,16 +13,16 @@ const { title } = Astro.props;
         background-color: rgba(var(--lavender), 0.5);
       }
 
-      a:hover {
+      li:hover {
         background-color: rgba(var(--lavender), 0.1);
       }
     </style></head
   >
 
   <body>
-    <main class="pt-2 flex">
-      <nav class="flex flex-col">
-        <ul class="p-4 flex flex-col">
+    <main class="py-2 flex flex-col md:flex-row">
+      <nav class="flex justify-center text-center md:text-left">
+        <ul class="md:p-4">
           <div class="mb-5">dylansWebSpace v0.0.2</div>
           <li><a class="p-1" href="/">home</a></li>
           <li><a class="p-1" href="/about">about</a></li>
@@ -40,7 +41,7 @@ const { title } = Astro.props;
 
         navLinks.forEach((link) => {
           if (link.getAttribute("href") == curPath) {
-            link.classList.add("active-page");
+            link.parentElement.classList.add("active-page");
           }
         });
       </script>

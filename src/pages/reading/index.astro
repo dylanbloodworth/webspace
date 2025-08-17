@@ -1,5 +1,7 @@
 ---
-import "../../styles/global.css";
+import "../../styles/style.css";
+import "../../styles/mobile.css";
+
 import Main from "../../layouts/main.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -9,7 +11,7 @@ const books: CollectionEntry<"bookReviews">[] =
 ---
 
 <Main title="reading">
-  <section class="flex flex-col p-10">
+  <section class="flex flex-col p-5 md:p-10">
     <h1 class="text-5xl">I'm trying to start reading again</h1>
     <p>
       Here's a collection of books that I've finished reading and my thoughts
@@ -17,7 +19,7 @@ const books: CollectionEntry<"bookReviews">[] =
     </p>
     <section class="flex justify-center">
       <ul
-        class="w-4/5 space-y-10 h-[55svh] overflow-y-auto bg-white p-5 border"
+        class="md:w-4/5 space-y-14 h-[50svh] md:h-[55svh] overflow-y-auto bg-white p-3 md:p-5 border"
       >
         {
           books.map((book) => (
@@ -27,14 +29,14 @@ const books: CollectionEntry<"bookReviews">[] =
               </div>
               <div class="pl-4">{book.data.stars}★</div>
               <hr />
-              <div class="pt-2 px-8 text-justify">{book.data.review}</div>
+              <div class="pt-2 md:px-8 text-justify">{book.data.review}</div>
             </li>
           ))
         }
       </ul>
     </section>
     <section class="pt-5">
-      <h2 class="text-3xl">Websites are also important</h2>
+      <h2 class="mt-5 text-3xl">Websites are also important</h2>
       <p>
         Making an effort to collect items that peak my interest reminds me of
         how often inspiring works are forgotten. Logging and storing these items
