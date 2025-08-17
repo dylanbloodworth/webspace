@@ -1,5 +1,4 @@
 ---
-import Blog from "../../layouts/blog.astro";
 import "../../styles/global.css";
 
 import { render } from "astro:content";
@@ -22,17 +21,40 @@ const { Content } = await render(entry);
 
 <html lang="en">
   <meta charset="UTF-8" />
+  <style is:global>
+    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+    body {
+      font-family: "EB Garamond";
+    }
+
+    p {
+      padding-block: 0.3em;
+    }
+
+    ol {
+      list-style-type: upper-roman !important;
+      padding-left: 5em;
+    }
+  </style>
   <title>{"blog: " + entry.data.title}</title>
-  <body>
-    <main class="px-30">
-      <nav class="pt-5">
-        <a class="underline text-[var(--blue)]" href="/blog/">back to blog</a>
+  <body class="flex justify-center">
+    <main class="pb-10 w-3/5">
+      <nav class="py-5">
+        <a class="underline text-[var(--blue)]" href="/blog/">go back!</a>
       </nav>
-      <h1 class="pt-10 text-4xl">{entry.data.title}</h1>
-      <div class="prose italic text-xl pb-8">{entry.data.desc}</div>
-      <div>
-        <Content />
-      </div>
+      <section class="p-10 bg-white border shadow-xl/15">
+        <header class="py-2 text-5xl text-center">
+          {entry.data.title}
+        </header>
+        <div class="text-xl pb-8 text-center">
+          {entry.data.desc}
+        </div>
+        <div class="text-xl leading-[1.75]">
+          <hr />
+          <Content />
+        </div>
+      </section>
     </main>
   </body>
 </html>
